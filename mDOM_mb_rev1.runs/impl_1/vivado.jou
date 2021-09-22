@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Aug 23 15:20:51 2021
-# Process ID: 15864
-# Current directory: C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1
-# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top.vdi
-# Journal file: C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1\vivado.jou
+# Start of session at: Tue Aug 31 08:10:41 2021
+# Process ID: 73593
+# Current directory: /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top.vdi
+# Journal file: /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

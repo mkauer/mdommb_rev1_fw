@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/fpga_temp_sync/fpga_temp_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_temp_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/sync/sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/fpga_temp_sync/sim/temp_sync_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module temp_sync_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Sat Jan 16 16:09:00 2021
--- Host        : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0_stub.vhdl
+-- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+-- Date        : Wed Jul 14 14:59:50 2021
+-- Host        : matts-laptop running 64-bit Fedora release 32 (Thirty Two)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top mig_7series_0 -prefix
+--               mig_7series_0_ mig_7series_0_stub.vhdl
 -- Design      : mig_7series_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7s100fgga676-2

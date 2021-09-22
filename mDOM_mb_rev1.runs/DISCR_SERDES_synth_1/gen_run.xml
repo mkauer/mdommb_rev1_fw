@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="DISCR_SERDES_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1605051289">
-  <File Type="PA-TCL" Name="DISCR_SERDES.tcl"/>
   <File Type="REPORTS-TCL" Name="DISCR_SERDES_reports.tcl"/>
+  <File Type="PA-TCL" Name="DISCR_SERDES.tcl"/>
+  <File Type="RDS-DCP" Name="DISCR_SERDES.dcp"/>
   <File Type="RDS-RDS" Name="DISCR_SERDES.vds"/>
   <File Type="RDS-UTIL" Name="DISCR_SERDES_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="DISCR_SERDES_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="DISCR_SERDES.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DISCR_SERDES">
     <File Path="$PSRCDIR/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xci">
       <FileInfo>

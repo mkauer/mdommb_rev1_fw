@@ -6,14 +6,10 @@
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # 
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
-exit
-
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2019.1/bin;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.1/bin
+  PATH=/home/mkauer/DM_ICE_250/firmware/Xilinx/SDK/2019.1/bin:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/bin
 else
-  PATH=C:/Xilinx/SDK/2019.1/bin;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2019.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=/home/mkauer/DM_ICE_250/firmware/Xilinx/SDK/2019.1/bin:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1'
+HD_PWD='/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +37,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 
 

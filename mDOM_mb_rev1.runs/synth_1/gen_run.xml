@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1629746046">
-  <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="top.vds"/>
-  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1630414614">
   <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/hdl/DDR3/DDR3_DPRAM_transfer.v">
@@ -563,24 +563,24 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="BUFFER_1024_22"/>
-  <BlockFileSet Type="BlockSrcs" Name="ADC_SERDES"/>
-  <BlockFileSet Type="BlockSrcs" Name="FIFO_2048_32"/>
-  <BlockFileSet Type="BlockSrcs" Name="DIRECT_RDOUT_DPRAM"/>
-  <BlockFileSet Type="BlockSrcs" Name="DIST_BUFFER_32_22"/>
-  <BlockFileSet Type="BlockSrcs" Name="FIFO_256_72"/>
-  <BlockFileSet Type="BlockSrcs" Name="XDOM_DDR3_PG"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIFO_1024_16"/>
+  <BlockFileSet Type="BlockSrcs" Name="PULSER_OUT_DIFF"/>
+  <BlockFileSet Type="BlockSrcs" Name="BUFFER_2048_22"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIFO_512_108"/>
+  <BlockFileSet Type="BlockSrcs" Name="DIST_BUFFER_128_12"/>
   <BlockFileSet Type="BlockSrcs" Name="ddr3_idelay_clk_wiz"/>
+  <BlockFileSet Type="BlockSrcs" Name="HBUF_RDOUT_DPRAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="mig_7series_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AFE_PULSER_OUTPUT"/>
+  <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
+  <BlockFileSet Type="BlockSrcs" Name="ADC_SERDES"/>
   <BlockFileSet Type="BlockSrcs" Name="idelay_discr_clk_wiz"/>
   <BlockFileSet Type="BlockSrcs" Name="lclk_adcclk_wiz"/>
-  <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
-  <BlockFileSet Type="BlockSrcs" Name="AFE_PULSER_OUTPUT"/>
-  <BlockFileSet Type="BlockSrcs" Name="mig_7series_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="HBUF_RDOUT_DPRAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="XDOM_DDR3_PG"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIFO_256_72"/>
+  <BlockFileSet Type="BlockSrcs" Name="FIFO_2048_32"/>
+  <BlockFileSet Type="BlockSrcs" Name="DIST_BUFFER_32_22"/>
   <BlockFileSet Type="BlockSrcs" Name="HBUF_DDR3_PG"/>
-  <BlockFileSet Type="BlockSrcs" Name="FIFO_512_108"/>
-  <BlockFileSet Type="BlockSrcs" Name="BUFFER_2048_22"/>
-  <BlockFileSet Type="BlockSrcs" Name="DIST_BUFFER_128_12"/>
-  <BlockFileSet Type="BlockSrcs" Name="PULSER_OUT_DIFF"/>
-  <BlockFileSet Type="BlockSrcs" Name="FIFO_1024_16"/>
+  <BlockFileSet Type="BlockSrcs" Name="DIRECT_RDOUT_DPRAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="BUFFER_1024_22"/>
 </GenRun>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="HBUF_RDOUT_DPRAM_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1610745571">
-  <File Type="PA-TCL" Name="HBUF_RDOUT_DPRAM.tcl"/>
   <File Type="REPORTS-TCL" Name="HBUF_RDOUT_DPRAM_reports.tcl"/>
+  <File Type="PA-TCL" Name="HBUF_RDOUT_DPRAM.tcl"/>
+  <File Type="RDS-DCP" Name="HBUF_RDOUT_DPRAM.dcp"/>
   <File Type="RDS-RDS" Name="HBUF_RDOUT_DPRAM.vds"/>
   <File Type="RDS-UTIL" Name="HBUF_RDOUT_DPRAM_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="HBUF_RDOUT_DPRAM_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="HBUF_RDOUT_DPRAM.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/HBUF_RDOUT_DPRAM">
     <File Path="$PSRCDIR/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM.xci">
       <FileInfo>

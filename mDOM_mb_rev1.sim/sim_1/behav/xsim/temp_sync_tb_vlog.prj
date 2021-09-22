@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  -i "../../../../hdl/inc/trigger_src" -i "../../../../hdl/bundles/mDOM_trig_bundle" -i "../../../../hdl/bundles/mDOM_wvb_conf_bundle" -i "../../../../hdl/bundles/mDOM_wvb_hdr_bundle_0" -i "../../../../hdl/bundles/mDOM_wvb_hdr_bundle_1" -i "../../../../hdl/bundles/mDOM_wvb_hdr_bundle_2" -i "../../../../hdl/bundles/mDOM_bsum_bundle" --include "../../../../mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz" --include "../../../../mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz" --include "../../../../mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz" \
+"../../../../hdl/fpga_temp_sync/fpga_temp_sync.v" \
+"../../../../hdl/sync/sync.v" \
+"../../../../hdl/fpga_temp_sync/sim/temp_sync_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

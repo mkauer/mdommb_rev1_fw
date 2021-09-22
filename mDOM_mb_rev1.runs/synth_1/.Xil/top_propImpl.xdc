@@ -1,5 +1,5 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/constrs/clocks.xdc rfile:../../../constrs/clocks.xdc id:1} [current_design]
-set_property SRC_FILE_INFO {cfile:C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/constrs/io.xdc rfile:../../../constrs/io.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc rfile:../../../constrs/clocks.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc rfile:../../../constrs/io.xdc id:2} [current_design]
 set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]
 set_max_delay -from [get_clocks fmc_clk] -to [get_clocks -of_objects [get_pins LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0]] 8.333 -datapath_only
 set_property src_info {type:XDC file:1 line:31 export:INPUT save:INPUT read:READ} [current_design]

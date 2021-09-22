@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ADC_SERDES_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1605047417">
-  <File Type="PA-TCL" Name="ADC_SERDES.tcl"/>
   <File Type="REPORTS-TCL" Name="ADC_SERDES_reports.tcl"/>
+  <File Type="PA-TCL" Name="ADC_SERDES.tcl"/>
+  <File Type="RDS-DCP" Name="ADC_SERDES.dcp"/>
   <File Type="RDS-RDS" Name="ADC_SERDES.vds"/>
   <File Type="RDS-UTIL" Name="ADC_SERDES_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ADC_SERDES_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ADC_SERDES.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ADC_SERDES">
     <File Path="$PSRCDIR/sources_1/ip/ADC_SERDES/ADC_SERDES.xci">
       <FileInfo>

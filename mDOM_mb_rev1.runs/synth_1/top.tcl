@@ -23,170 +23,170 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.cache/wt [current_project]
-set_property parent.project_path C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.xpr [current_project]
+set_property webtalk.parent_dir /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.cache/wt [current_project]
+set_property parent.project_path /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.cache/ip [current_project]
+set_property ip_output_repo /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs {
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/inc/trigger_src
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_trig_bundle
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_conf_bundle
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_0
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_1
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_2
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_bsum_bundle
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/inc/trigger_src
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_trig_bundle
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_conf_bundle
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_0
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_1
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_2
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_bsum_bundle
 } [current_fileset]
 read_verilog -library xil_defaultlib {
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/DDR3/DDR3_DPRAM_transfer.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/DDR3/DDR3_pg_transfer_ctrl.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/DDR3/DDR3_pg_transfer_mux.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/adc3424_clk_IO/adc3424_clk_IO.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/adc_discr_channel/adc_discr_channel.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/afe_pulser/afe_pulser.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/cmp/cmp.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/crc16_64b_parallel/crc16_64b_parallel.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/crc16_8b_parallel/crc16_8b_parallel.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/crs_master/crs_master.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/delay/delay.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/delay/delay_n.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/delay/delay_one.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/rollingsum/deviation_detector.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/discr_scaler/discr_scaler.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/err_mngr/err_mngr.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/fpga_temp_sync/fpga_temp_sync.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/ft232r_hs/ft232r_hs.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/ft232r_proc_buffered/ft232r_proc_buffered.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/global_trigger/global_trigger.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/hbuf_ctrl/hbuf_ctrl.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/i2c_byte/i2c_byte.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/i2c_master/i2c_master.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/icm_time_transfer/icm_ltc_des.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/icm_time_transfer/icm_time_transfer.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/discr_scaler/inhibit_generator_1b.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/discr_scaler/inhibit_generator_8b.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/iter_integer_linear_cal/iter_integer_linear_calc.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/knight_rider/knight_rider.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/local_time_counter/local_time_counter.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_bsum_bundle/mDOM_bsum_bundle_fan_in.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_bsum_bundle/mDOM_bsum_bundle_fan_out.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_trig_bundle/mDOM_trig_bundle_fan_in.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_trig_bundle/mDOM_trig_bundle_fan_out.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_conf_bundle/mDOM_wvb_conf_bundle_fan_in.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_conf_bundle/mDOM_wvb_conf_bundle_fan_out.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_1/mDOM_wvb_hdr_bundle_1_fan_in.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_1/mDOM_wvb_hdr_bundle_1_fan_out.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_2/mDOM_wvb_hdr_bundle_2_fan_in.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_2/mDOM_wvb_hdr_bundle_2_fan_out.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/mdom_trigger/mdom_trigger.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/n_channel_mux/n_channel_mux.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/negedge_detector/negedge_detector.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/one_shot/one_shot.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/periodic_trigger_gen/periodic_trigger_gen.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/posedge_counter/posedge_counter.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/posedge_detector/posedge_detector.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/pretrigger_buffer/pretrigger_buffer.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/pulse_extender/pulse_extender.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/rollingsum/rollingsum_lutram.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/rs232_des/rs232_des.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/rs232_ser/rs232_ser.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/serial_ck/serial_ck.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/serial_rx/serial_rx.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/serial_tx/serial_tx.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/spi_master/spi_master.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/sync/sync.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/task_reg/task_reg.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/uart_proc_hs/uart_proc_hs.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/waveform_acquisition/waveform_acquisition.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/waveform_buffer/waveform_buffer.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/waveform_buffer_storage/waveform_buffer_storage.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/waveform_buffer/wvb_overflow_ctrl.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/waveform_buffer/wvb_rd_addr_ctrl.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/wvb_rd_ctrl/wvb_rd_ctrl_fmt_0.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/wvb_rd_ctrl/wvb_rd_ctrl_fmt_1.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/wvb_reader/wvb_reader.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/wvb_wr_ctrl/wvb_wr_ctrl.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/xdom/xdom.v
-  C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/hdl/mdommb_fw_rev1_top.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/DDR3/DDR3_DPRAM_transfer.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/DDR3/DDR3_pg_transfer_ctrl.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/DDR3/DDR3_pg_transfer_mux.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/adc3424_clk_IO/adc3424_clk_IO.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/adc_discr_channel/adc_discr_channel.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/afe_pulser/afe_pulser.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/cmp/cmp.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/crc16_64b_parallel/crc16_64b_parallel.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/crc16_8b_parallel/crc16_8b_parallel.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/crs_master/crs_master.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/delay/delay.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/delay/delay_n.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/delay/delay_one.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/rollingsum/deviation_detector.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/discr_scaler/discr_scaler.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/err_mngr/err_mngr.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/fpga_temp_sync/fpga_temp_sync.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/ft232r_hs/ft232r_hs.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/ft232r_proc_buffered/ft232r_proc_buffered.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/global_trigger/global_trigger.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/hbuf_ctrl/hbuf_ctrl.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/i2c_byte/i2c_byte.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/i2c_master/i2c_master.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/icm_time_transfer/icm_ltc_des.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/icm_time_transfer/icm_time_transfer.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/discr_scaler/inhibit_generator_1b.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/discr_scaler/inhibit_generator_8b.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/iter_integer_linear_cal/iter_integer_linear_calc.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/knight_rider/knight_rider.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/local_time_counter/local_time_counter.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_bsum_bundle/mDOM_bsum_bundle_fan_in.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_bsum_bundle/mDOM_bsum_bundle_fan_out.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_trig_bundle/mDOM_trig_bundle_fan_in.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_trig_bundle/mDOM_trig_bundle_fan_out.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_conf_bundle/mDOM_wvb_conf_bundle_fan_in.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_conf_bundle/mDOM_wvb_conf_bundle_fan_out.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_1/mDOM_wvb_hdr_bundle_1_fan_in.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_1/mDOM_wvb_hdr_bundle_1_fan_out.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_2/mDOM_wvb_hdr_bundle_2_fan_in.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/bundles/mDOM_wvb_hdr_bundle_2/mDOM_wvb_hdr_bundle_2_fan_out.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/mdom_trigger/mdom_trigger.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/n_channel_mux/n_channel_mux.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/negedge_detector/negedge_detector.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/one_shot/one_shot.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/periodic_trigger_gen/periodic_trigger_gen.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/posedge_counter/posedge_counter.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/posedge_detector/posedge_detector.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/pretrigger_buffer/pretrigger_buffer.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/pulse_extender/pulse_extender.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/rollingsum/rollingsum_lutram.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/rs232_des/rs232_des.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/rs232_ser/rs232_ser.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/serial_ck/serial_ck.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/serial_rx/serial_rx.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/serial_tx/serial_tx.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/spi_master/spi_master.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/sync/sync.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/task_reg/task_reg.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/uart_proc_hs/uart_proc_hs.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/waveform_acquisition/waveform_acquisition.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/waveform_buffer/waveform_buffer.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/waveform_buffer_storage/waveform_buffer_storage.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/waveform_buffer/wvb_overflow_ctrl.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/waveform_buffer/wvb_rd_addr_ctrl.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/wvb_rd_ctrl/wvb_rd_ctrl_fmt_0.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/wvb_rd_ctrl/wvb_rd_ctrl_fmt_1.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/wvb_reader/wvb_reader.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/wvb_wr_ctrl/wvb_wr_ctrl.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/xdom/xdom.v
+  /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/mdommb_fw_rev1_top.v
 }
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIRECT_RDOUT_DPRAM/DIRECT_RDOUT_DPRAM.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIRECT_RDOUT_DPRAM/DIRECT_RDOUT_DPRAM_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIRECT_RDOUT_DPRAM/DIRECT_RDOUT_DPRAM.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIRECT_RDOUT_DPRAM/DIRECT_RDOUT_DPRAM_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_32_22/DIST_BUFFER_32_22.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_32_22/DIST_BUFFER_32_22_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_32_22/DIST_BUFFER_32_22.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_32_22/DIST_BUFFER_32_22_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_late.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_board.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_late.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_DDR3_PG/HBUF_DDR3_PG.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_DDR3_PG/HBUF_DDR3_PG_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_DDR3_PG/HBUF_DDR3_PG.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_DDR3_PG/HBUF_DDR3_PG_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz_board.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_2048_22/BUFFER_2048_22.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_2048_22/BUFFER_2048_22_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_2048_22/BUFFER_2048_22.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_2048_22/BUFFER_2048_22_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_128_12/DIST_BUFFER_128_12.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_128_12/DIST_BUFFER_128_12_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_128_12/DIST_BUFFER_128_12.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_128_12/DIST_BUFFER_128_12_ooc.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xdc]
 
-read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xci
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16_ooc.xdc]
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -196,11 +196,11 @@ set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/constrs/clocks.xdc
-set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/constrs/clocks.xdc]
+read_xdc /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc
+set_property used_in_implementation false [get_files /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc]
 
-read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/constrs/io.xdc
-set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/mdommb_rev1_fw/constrs/io.xdc]
+read_xdc /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc
+set_property used_in_implementation false [get_files /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ddr3_idelay_clk_wiz_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1611679713">
-  <File Type="PA-TCL" Name="ddr3_idelay_clk_wiz.tcl"/>
   <File Type="REPORTS-TCL" Name="ddr3_idelay_clk_wiz_reports.tcl"/>
+  <File Type="PA-TCL" Name="ddr3_idelay_clk_wiz.tcl"/>
+  <File Type="RDS-DCP" Name="ddr3_idelay_clk_wiz.dcp"/>
   <File Type="RDS-RDS" Name="ddr3_idelay_clk_wiz.vds"/>
   <File Type="RDS-UTIL" Name="ddr3_idelay_clk_wiz_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ddr3_idelay_clk_wiz_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="ddr3_idelay_clk_wiz.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ddr3_idelay_clk_wiz">
     <File Path="$PSRCDIR/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xci">
       <FileInfo>

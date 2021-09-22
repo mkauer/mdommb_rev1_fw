@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="AFE_PULSER_OUTPUT_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1607093629">
-  <File Type="PA-TCL" Name="AFE_PULSER_OUTPUT.tcl"/>
   <File Type="REPORTS-TCL" Name="AFE_PULSER_OUTPUT_reports.tcl"/>
+  <File Type="PA-TCL" Name="AFE_PULSER_OUTPUT.tcl"/>
+  <File Type="RDS-DCP" Name="AFE_PULSER_OUTPUT.dcp"/>
   <File Type="RDS-RDS" Name="AFE_PULSER_OUTPUT.vds"/>
   <File Type="RDS-UTIL" Name="AFE_PULSER_OUTPUT_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="AFE_PULSER_OUTPUT_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="AFE_PULSER_OUTPUT.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/AFE_PULSER_OUTPUT">
     <File Path="$PSRCDIR/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xci">
       <FileInfo>
