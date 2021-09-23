@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Tue Aug 31 08:05:26 2021
+| Date         : Wed Sep 22 13:50:53 2021
 | Host         : matts-laptop running 64-bit Fedora release 32 (Thirty Two)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -50,62 +50,62 @@ Related violations: <none>
 
 PDRC-190#1 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X15Y138 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X42Y153 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#2 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X15Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X44Y153 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#3 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X14Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X45Y149 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#4 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X13Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X44Y150 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#5 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X12Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X44Y148 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#6 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X9Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X43Y153 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#7 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X12Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X48Y147 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#8 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X10Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X46Y150 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#9 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X13Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X44Y145 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#10 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X11Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X41Y144 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#11 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X14Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X50Y147 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 PDRC-190#12 Warning
 Suboptimally placed synchronized register chain  
-The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X8Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+The FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X44Y143 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning

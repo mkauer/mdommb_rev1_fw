@@ -333,7 +333,7 @@ module top (
 `include "mDOM_wvb_hdr_bundle_2_inc.v"
 `include "mDOM_bsum_bundle_inc.v"
 
-localparam[15:0] FW_VNUM = 16'h20;
+localparam[15:0] FW_VNUM = 16'h1000;
 
 // 1 for icm clock, 0 for Q_OSC
 localparam CLK_SRC = 1;
@@ -367,6 +367,7 @@ wire lclk_adcclk_locked;
 wire idelay_discrclk_locked;
 wire clk_100MHz;
 wire clk_120MHz;
+wire clk_120shift180;
 wire clk_200MHz;
 wire clk_360MHz;
 wire clk_480MHz;
@@ -374,12 +375,14 @@ lclk_adcclk_wiz LCLK_ADCCLK_WIZ_0 (
   .clk_in1(osc_20MHz),
   .clk_out1(clk_120MHz),
   .clk_out2(clk_360MHz),
+  .clk_out3(clk_120shift180),
   .locked(lclk_adcclk_locked),
   .reset(1'b0)
 );
 wire lclk = clk_120MHz;
 wire lclk_rst = !lclk_adcclk_locked;
 wire i_adc_clock = clk_120MHz;
+wire i_adc_clock2 = clk_120shift180;
 
 // this no longer handles the idelay clock after the
 // switch from 125 MHz to 120 MHz
@@ -414,31 +417,38 @@ IDELAYCTRL delayctrl(.RDY(idelayctrl_rdy),.REFCLK(clk_200MHz),.RST(delayctrl_rst
 wire[5:0] i_adc_dclock;
 wire[5:0] i_adc_fclock;
 
+// chans 0-3
 ADC3424_clk_IO clk_IO_0(.enc_clk(i_adc_clock),
                         .dclk_P(ADC0_DCLK_P), .dclk_N(ADC0_DCLK_M), .dclk_out(i_adc_dclock[0]),
                         .fclk_P(ADC0_FCLK_P), .fclk_N(ADC0_FCLK_M), .fclk_out(i_adc_fclock[0]),
                         .adc_clk_P(ADC0_CLOCK_P), .adc_clk_N(ADC0_CLOCK_M),
                         .sysrf_P(ADC0_SYSRF_P), .sysrf_N(ADC0_SYSRF_M));
+// chans 4-7
 ADC3424_clk_IO clk_IO_1(.enc_clk(i_adc_clock),
                         .dclk_P(ADC1_DCLK_P), .dclk_N(ADC1_DCLK_M), .dclk_out(i_adc_dclock[1]),
                         .fclk_P(ADC1_FCLK_P), .fclk_N(ADC1_FCLK_M), .fclk_out(i_adc_fclock[1]),
                         .adc_clk_P(ADC1_CLOCK_P), .adc_clk_N(ADC1_CLOCK_M),
                         .sysrf_P(ADC1_SYSRF_P), .sysrf_N(ADC1_SYSRF_M));
-ADC3424_clk_IO clk_IO_2(.enc_clk(i_adc_clock),
+// chans 8-11
+// let's just phase shift this one for now
+ADC3424_clk_IO clk_IO_2(.enc_clk(i_adc_clock2),
                         .dclk_P(ADC2_DCLK_P), .dclk_N(ADC2_DCLK_M), .dclk_out(i_adc_dclock[2]),
                         .fclk_P(ADC2_FCLK_P), .fclk_N(ADC2_FCLK_M), .fclk_out(i_adc_fclock[2]),
                         .adc_clk_P(ADC2_CLOCK_P), .adc_clk_N(ADC2_CLOCK_M),
                         .sysrf_P(ADC2_SYSRF_P), .sysrf_N(ADC2_SYSRF_M));
+// chans 12-15
 ADC3424_clk_IO clk_IO_3(.enc_clk(i_adc_clock),
                         .dclk_P(ADC3_DCLK_P), .dclk_N(ADC3_DCLK_M), .dclk_out(i_adc_dclock[3]),
                         .fclk_P(ADC3_FCLK_P), .fclk_N(ADC3_FCLK_M), .fclk_out(i_adc_fclock[3]),
                         .adc_clk_P(ADC3_CLOCK_P), .adc_clk_N(ADC3_CLOCK_M),
                         .sysrf_P(ADC3_SYSRF_P), .sysrf_N(ADC3_SYSRF_M));
+// chans 16-19
 ADC3424_clk_IO clk_IO_4(.enc_clk(i_adc_clock),
                         .dclk_P(ADC4_DCLK_P), .dclk_N(ADC4_DCLK_M), .dclk_out(i_adc_dclock[4]),
                         .fclk_P(ADC4_FCLK_P), .fclk_N(ADC4_FCLK_M), .fclk_out(i_adc_fclock[4]),
                         .adc_clk_P(ADC4_CLOCK_P), .adc_clk_N(ADC4_CLOCK_M),
                         .sysrf_P(ADC4_SYSRF_P), .sysrf_N(ADC4_SYSRF_M));
+// chans 20-23
 ADC3424_clk_IO clk_IO_5(.enc_clk(i_adc_clock),
                         .dclk_P(ADC5_DCLK_P), .dclk_N(ADC5_DCLK_M), .dclk_out(i_adc_dclock[5]),
                         .fclk_P(ADC5_FCLK_P), .fclk_N(ADC5_FCLK_M), .fclk_out(i_adc_fclock[5]),

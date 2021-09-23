@@ -2,58 +2,887 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Aug 31 08:10:41 2021
-# Process ID: 73593
+# Start of session at: Wed Sep 22 13:45:31 2021
+# Process ID: 253151
 # Current directory: /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top.vdi
 # Journal file: /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
-Command: open_checkpoint top_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1573.023 ; gain = 0.000 ; free physical = 20605 ; free virtual = 40727
+Command: link_design -top top -part xc7s100fgga676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7s100fgga676-2
-INFO: [Netlist 29-17] Analyzing 7779 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.dcp' for cell 'DDR3_IDELAY_CLK_WIZ_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.dcp' for cell 'IDELAY_DISCR_CLK_WIZ_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.dcp' for cell 'LCLK_ADCCLK_WIZ_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.dcp' for cell 'CAL_PULSER_0/PULSER_OUT_DIFF'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'DDR3_TRANSFER_0/MIG_7_SERIES'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_DDR3_PG/HBUF_DDR3_PG.dcp' for cell 'HBUF_CTRL_0/DDR3_PG_DPRAM_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM.dcp' for cell 'HBUF_CTRL_0/READER_DPRAM_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.dcp' for cell 'I2CM_0/RX_FIFO_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.dcp' for cell 'PULSER_0/PULSER_OUT'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG.dcp' for cell 'XDOM_0/PG_DPRAM'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIRECT_RDOUT_DPRAM/DIRECT_RDOUT_DPRAM.dcp' for cell 'XDOM_0/RDOUT_DPRAM'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.dcp' for cell 'XDOM_0/UART_DEBUG_0/FIFO_2048_32_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.dcp' for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/ADC_SERDES_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.dcp' for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/DISCR_SERDES'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_128_12/DIST_BUFFER_128_12.dcp' for cell 'waveform_acq_gen[0].WFM_ACQ/ROLLING_BSUM/sample_buffer'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_32_22/DIST_BUFFER_32_22.dcp' for cell 'waveform_acq_gen[0].WFM_ACQ/WVB/PTB/DIST_PTB'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.dcp' for cell 'waveform_acq_gen[0].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_2048_22/BUFFER_2048_22.dcp' for cell 'waveform_acq_gen[0].WFM_ACQ/WVB/WBS/WAVEFORM_DISCR_BUFF'
+INFO: [Netlist 29-17] Analyzing 7819 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2719.676 ; gain = 75.961 ; free physical = 19582 ; free virtual = 39707
-Restored from archive | CPU: 4.010000 secs | Memory: 87.994423 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2719.676 ; gain = 75.961 ; free physical = 19582 ; free virtual = 39707
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2719.676 ; gain = 0.000 ; free physical = 19600 ; free virtual = 39725
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc] for cell 'XDOM_0/UART_DEBUG_0/FIFO_2048_32_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc] for cell 'XDOM_0/UART_DEBUG_0/FIFO_2048_32_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc] for cell 'XDOM_0/UART_ICM_0/FIFO_2048_32_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc] for cell 'XDOM_0/UART_ICM_0/FIFO_2048_32_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc] for cell 'XDOM_0/UART_MCU_0/FIFO_2048_32_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xdc] for cell 'XDOM_0/UART_MCU_0/FIFO_2048_32_0/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'FIFO_256_72'. The XDC file /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_board.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_board.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[10].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[10].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[10].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[10].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[11].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[11].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[11].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[11].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[12].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[12].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[12].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[12].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[13].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[13].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[13].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[13].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[14].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[14].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[14].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[14].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[15].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[15].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[15].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[15].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[16].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[16].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[16].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[16].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[17].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[17].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[17].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[17].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[18].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[18].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[18].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[18].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[19].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[19].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[19].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[19].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[1].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[1].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[1].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[1].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[20].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[20].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[20].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[20].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[21].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[21].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[21].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[21].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[22].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[22].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[22].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[22].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[23].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[23].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[23].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[23].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[2].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[2].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[2].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[2].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[3].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[3].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[3].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[3].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[4].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[4].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[4].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[4].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[5].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[5].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[5].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[5].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[6].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[6].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[6].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[6].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[7].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[7].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[7].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[7].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[8].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[8].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[8].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[8].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[9].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[9].ADC_DISCR_CHAN/ADC_SERDES_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[9].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xdc] for cell 'adc_discr_iface_gen[9].ADC_DISCR_CHAN/ADC_SERDES_1/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[0].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[10].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[10].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[11].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[11].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[12].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[12].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[13].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[13].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[14].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[14].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[15].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[15].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[16].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[16].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[17].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[17].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[19].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[19].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[1].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[1].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[20].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[20].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[21].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[21].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[22].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[22].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[2].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[2].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[3].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[3].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[4].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[4].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[6].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[6].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[7].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[7].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[8].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[8].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[9].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xdc] for cell 'adc_discr_iface_gen[9].ADC_DISCR_CHAN/DISCR_SERDES/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xdc] for cell 'PULSER_0/PULSER_OUT/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xdc] for cell 'PULSER_0/PULSER_OUT/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'DDR3_TRANSFER_0/MIG_7_SERIES'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'DDR3_TRANSFER_0/MIG_7_SERIES'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz_board.xdc] for cell 'DDR3_IDELAY_CLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz_board.xdc] for cell 'DDR3_IDELAY_CLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xdc] for cell 'DDR3_IDELAY_CLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xdc] for cell 'DDR3_IDELAY_CLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[0].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[0].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[10].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[10].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[11].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[11].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[12].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[12].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[13].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[13].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[14].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[14].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[15].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[15].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[16].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[16].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[17].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[17].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[18].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[18].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[19].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[19].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[1].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[1].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[20].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[20].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[21].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[21].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[22].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[22].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[23].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[23].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[2].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[2].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[3].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[3].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[5].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[5].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[6].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[6].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[7].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[7].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[8].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[8].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[9].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xdc] for cell 'waveform_acq_gen[9].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xdc] for cell 'CAL_PULSER_0/PULSER_OUT_DIFF/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xdc] for cell 'CAL_PULSER_0/PULSER_OUT_DIFF/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xdc] for cell 'I2CM_0/RX_FIFO_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xdc] for cell 'I2CM_0/RX_FIFO_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xdc] for cell 'I2CM_0/TX_FIFO_0/U0'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xdc] for cell 'I2CM_0/TX_FIFO_0/U0'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:29]
+INFO: [Timing 38-2] Deriving generated clocks [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:29]
+get_clocks: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2675.707 ; gain = 536.820 ; free physical = 15520 ; free virtual = 37896
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc]
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc]
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc]
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_late.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0/inst'
+Finished Parsing XDC File [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_late.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0/inst'
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2678.707 ; gain = 0.000 ; free physical = 15619 ; free virtual = 37995
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 463 instances were transformed.
+  A total of 462 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 17 instances
   IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
   IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 8 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 227 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 192 instances
-  SRLC32E => SRL16E: 1 instances
 
-INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
-open_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2719.676 ; gain = 1146.652 ; free physical = 19600 ; free virtual = 39725
+29 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 2678.707 ; gain = 1082.395 ; free physical = 15619 ; free virtual = 37995
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s100'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.94 . Memory (MB): peak = 2742.738 ; gain = 64.031 ; free physical = 15613 ; free virtual = 37990
+
+Starting Cache Timing Information Task
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 11eb33351
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 2744.598 ; gain = 1.859 ; free physical = 15473 ; free virtual = 37849
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 147e94590
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15469 ; free virtual = 37845
+INFO: [Opt 31-389] Phase Retarget created 25 cells and removed 70 cells
+INFO: [Opt 31-1021] In phase Retarget, 167 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1463ce920
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15468 ; free virtual = 37844
+INFO: [Opt 31-389] Phase Constant propagation created 11 cells and removed 78 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 110 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+INFO: [Opt 31-120] Instance I2CM_0/TX_FIFO_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/gae.c3 (FIFO_1024_16_compare_4_HD11) has been optimized to an empty box cell during sweep but it has constraints that prevent its removal. Empty box cells do not impact the implementation flow but they have no functional relevance.
+Resolution: If this is not expected, please check for DONT_TOUCH properties or timing constraint set on the empty box cell or on nets connected to the cell. If found, remove the relevant DONT_TOUCH property or timing constraint and re-run opt_design.
+INFO: [Opt 31-120] Instance I2CM_0/RX_FIFO_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/gae.c3 (FIFO_1024_16_compare_4) has been optimized to an empty box cell during sweep but it has constraints that prevent its removal. Empty box cells do not impact the implementation flow but they have no functional relevance.
+Resolution: If this is not expected, please check for DONT_TOUCH properties or timing constraint set on the empty box cell or on nets connected to the cell. If found, remove the relevant DONT_TOUCH property or timing constraint and re-run opt_design.
+Phase 3 Sweep | Checksum: 20491465e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15464 ; free virtual = 37840
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 636 cells
+INFO: [Opt 31-1021] In phase Sweep, 11720 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 20491465e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15465 ; free virtual = 37841
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 20491465e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15465 ; free virtual = 37841
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 245c78738
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15465 ; free virtual = 37841
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 112 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              25  |              70  |                                            167  |
+|  Constant propagation         |              11  |              78  |                                            110  |
+|  Sweep                        |               0  |             636  |                                          11720  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            112  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15465 ; free virtual = 37841
+Ending Logic Optimization Task | Checksum: 1d5a20b63
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2867.410 ; gain = 0.000 ; free physical = 15467 ; free virtual = 37843
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.322 | TNS=0.000 |
+INFO: [Power 33-23] Power model is not available for PU_SCL
+INFO: [Power 33-23] Power model is not available for PU_SDA
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 6 BRAM(s) out of a total of 110 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 148 newly gated: 1 Total Ports: 220
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 1833b8457
+
+Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15289 ; free virtual = 37665
+Ending Power Optimization Task | Checksum: 1833b8457
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:17 . Memory (MB): peak = 3745.488 ; gain = 878.078 ; free physical = 15371 ; free virtual = 37747
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1d6d7cbce
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15379 ; free virtual = 37755
+Ending Final Cleanup Task | Checksum: 1d6d7cbce
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15376 ; free virtual = 37752
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15376 ; free virtual = 37752
+Ending Netlist Obfuscation Task | Checksum: 1d6d7cbce
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15375 ; free virtual = 37751
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:28 ; elapsed = 00:00:38 . Memory (MB): peak = 3745.488 ; gain = 1066.781 ; free physical = 15375 ; free virtual = 37751
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15375 ; free virtual = 37751
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15366 ; free virtual = 37746
+INFO: [Common 17-1381] The checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3745.488 ; gain = 0.000 ; free physical = 15358 ; free virtual = 37751
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 3793.512 ; gain = 48.023 ; free physical = 15354 ; free virtual = 37746
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s100'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15299 ; free virtual = 37745
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1667bf9d8
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15299 ; free virtual = 37745
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15298 ; free virtual = 37745
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 165d6bab1
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15223 ; free virtual = 37628
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 17b4b932a
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15072 ; free virtual = 37498
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 17b4b932a
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15066 ; free virtual = 37498
+Phase 1 Placer Initialization | Checksum: 17b4b932a
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:26 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15072 ; free virtual = 37498
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 207565ebd
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:29 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15039 ; free virtual = 37445
+
+Phase 2.2 Global Placement Core
+
+Phase 2.2.1 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14893 ; free virtual = 37371
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Fanout                        |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           6  |  00:00:01  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2.1 Physical Synthesis In Placer | Checksum: 1dc1333fe
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:00:59 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14858 ; free virtual = 37367
+Phase 2.2 Global Placement Core | Checksum: 173631aab
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:00 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14916 ; free virtual = 37358
+Phase 2 Global Placement | Checksum: 173631aab
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:01:00 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14942 ; free virtual = 37384
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: f1652a87
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:03 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14932 ; free virtual = 37374
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a3d21428
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:10 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14928 ; free virtual = 37358
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1cde18bf2
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:11 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14928 ; free virtual = 37358
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ae8368ae
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:11 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14928 ; free virtual = 37358
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 2091dbbec
+
+Time (s): cpu = 00:03:07 ; elapsed = 00:01:15 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14937 ; free virtual = 37366
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 111e4396f
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:01:25 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14897 ; free virtual = 37324
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 17581d423
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:28 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14900 ; free virtual = 37327
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 13dc9d8fd
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:28 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14900 ; free virtual = 37327
+Phase 3 Detail Placement | Checksum: 13dc9d8fd
+
+Time (s): cpu = 00:03:22 ; elapsed = 00:01:29 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14900 ; free virtual = 37327
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c227e01f
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net WVB_READER/RD_CTRL/i_wvb_reader_en_2_reg, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net scaler_gen[18].THRESH_SCALER/SS[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net LTC_0/PEDGE_0/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 3 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 3, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1c227e01f
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:01:35 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14943 ; free virtual = 37375
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.527. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1fa4fb1d5
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:01:38 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14924 ; free virtual = 37352
+Phase 4.1 Post Commit Optimization | Checksum: 1fa4fb1d5
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:01:38 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14843 ; free virtual = 37270
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1fa4fb1d5
+
+Time (s): cpu = 00:03:50 ; elapsed = 00:01:39 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14943 ; free virtual = 37371
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1fa4fb1d5
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:01:39 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14944 ; free virtual = 37371
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14944 ; free virtual = 37372
+Phase 4.4 Final Placement Cleanup | Checksum: 211a66b76
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:01:40 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14944 ; free virtual = 37372
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 211a66b76
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:40 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14944 ; free virtual = 37372
+Ending Placer Task | Checksum: 16c7e5038
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:40 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14945 ; free virtual = 37372
+INFO: [Common 17-83] Releasing license: Implementation
+107 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:58 ; elapsed = 00:01:45 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15006 ; free virtual = 37434
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 15006 ; free virtual = 37434
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14864 ; free virtual = 37395
+INFO: [Common 17-1381] The checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14970 ; free virtual = 37427
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14951 ; free virtual = 37408
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.86 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14956 ; free virtual = 37423
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s100'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: cf6b14b2 ConstDB: 0 ShapeSum: 9d133b86 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 4446241f
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14783 ; free virtual = 37240
+Post Restoration Checksum: NetGraph: 3740d39 NumContArr: 40d216e6 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 4446241f
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14751 ; free virtual = 37209
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 4446241f
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14710 ; free virtual = 37167
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 4446241f
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14710 ; free virtual = 37167
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 11187dbba
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:26 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14662 ; free virtual = 37115
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.755  | TNS=0.000  | WHS=-1.348 | THS=-2666.151|
+
+Phase 2 Router Initialization | Checksum: 16a89d928
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:30 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14597 ; free virtual = 37074
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 72860
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 72860
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 6775a7c8
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:37 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14578 ; free virtual = 37049
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6868
+ Number of Nodes with overlaps = 880
+ Number of Nodes with overlaps = 249
+ Number of Nodes with overlaps = 93
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.039  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 16084a3c2
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:10 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14518 ; free virtual = 37035
+Phase 4 Rip-up And Reroute | Checksum: 16084a3c2
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:10 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14518 ; free virtual = 37035
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 121437645
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:01:11 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14521 ; free virtual = 37037
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.039  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 121437645
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:01:12 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14522 ; free virtual = 37038
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 121437645
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:01:12 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14522 ; free virtual = 37038
+Phase 5 Delay and Skew Optimization | Checksum: 121437645
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:01:12 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14522 ; free virtual = 37038
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: a2d24e9c
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:14 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14508 ; free virtual = 37024
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.039  | TNS=0.000  | WHS=-0.489 | THS=-24.662|
+
+Phase 6.1 Hold Fix Iter | Checksum: 18b6e8eba
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:01:14 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14498 ; free virtual = 37014
+Phase 6 Post Hold Fix | Checksum: 13b481b72
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:01:14 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14498 ; free virtual = 37014
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 21.0269 %
+  Global Horizontal Routing Utilization  = 22.9375 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1225efd03
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:15 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14498 ; free virtual = 37014
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1225efd03
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:15 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14496 ; free virtual = 37012
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 13c0a2596
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:01:20 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14497 ; free virtual = 37013
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 16713a7b2
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:22 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14444 ; free virtual = 37005
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.039  | TNS=0.000  | WHS=0.051  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 16713a7b2
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:22 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14460 ; free virtual = 37005
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:01:22 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14541 ; free virtual = 37086
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+125 Infos, 0 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:02 ; elapsed = 00:01:27 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14541 ; free virtual = 37086
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14541 ; free virtual = 37086
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14388 ; free virtual = 37050
+INFO: [Common 17-1381] The checkpoint '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 3793.512 ; gain = 0.000 ; free physical = 14516 ; free virtual = 37079
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:24 ; elapsed = 00:00:08 . Memory (MB): peak = 3817.523 ; gain = 24.012 ; free physical = 14467 ; free virtual = 37042
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:55 ; elapsed = 00:00:12 . Memory (MB): peak = 3817.523 ; gain = 0.000 ; free physical = 14418 ; free virtual = 36989
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for PU_SCL
+INFO: [Power 33-23] Power model is not available for PU_SDA
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'fmc_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:8]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'icm_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc:24]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+143 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 3817.523 ; gain = 0.000 ; free physical = 14307 ; free virtual = 36901
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
 Command: write_bitstream -force top.bit -bin_file
 Attempting to get a license for feature 'Implementation' and/or device 'xc7s100'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7s100'
 Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/u_ddr3_infrastructure/pll_clk3_out on the DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
-WARNING: [DRC RTSTAT-10] No routable loads: 110 net(s) have no routable loads. The problem bus(es) and/or net(s) are waveform_acq_gen[8].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[15].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[14].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[7].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[16].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[13].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[17].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[12].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[18].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[6].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[11].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[1].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[19].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[10].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[20].WFM_ACQ/i_xdom_wvb_config_bundle[37]... and (the first 15 of 110 listed).
+WARNING: [DRC RTSTAT-10] No routable loads: 110 net(s) have no routable loads. The problem bus(es) and/or net(s) are waveform_acq_gen[21].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[14].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[15].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[16].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[17].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[18].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[1].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[19].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[20].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[23].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[22].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[2].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[3].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[4].WFM_ACQ/i_xdom_wvb_config_bundle[37], waveform_acq_gen[5].WFM_ACQ/i_xdom_wvb_config_bundle[37]... and (the first 15 of 110 listed).
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
@@ -67,9 +896,9 @@ Writing bitstream ./top.bit...
 Writing bitstream ./top.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 31 08:11:51 2021. For additional details about this file, please refer to the WebTalk help file at /home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Sep 22 13:51:44 2021. For additional details about this file, please refer to the WebTalk help file at /home/mkauer/software/xilinx-2019.1/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-24 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+163 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:01:10 ; elapsed = 00:00:35 . Memory (MB): peak = 3282.203 ; gain = 562.527 ; free physical = 19456 ; free virtual = 39593
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 31 08:11:51 2021...
+write_bitstream: Time (s): cpu = 00:00:55 ; elapsed = 00:00:30 . Memory (MB): peak = 3952.926 ; gain = 71.371 ; free physical = 14416 ; free virtual = 36932
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 22 13:51:44 2021...

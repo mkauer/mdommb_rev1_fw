@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="FIFO_256_72_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1605030303">
-  <File Type="REPORTS-TCL" Name="FIFO_256_72_reports.tcl"/>
   <File Type="PA-TCL" Name="FIFO_256_72.tcl"/>
   <File Type="RDS-DCP" Name="FIFO_256_72.dcp"/>
+  <File Type="REPORTS-TCL" Name="FIFO_256_72_reports.tcl"/>
   <File Type="RDS-RDS" Name="FIFO_256_72.vds"/>
   <File Type="RDS-UTIL" Name="FIFO_256_72_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="FIFO_256_72_utilization_synth.pb"/>

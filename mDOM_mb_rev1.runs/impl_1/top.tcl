@@ -61,13 +61,121 @@ proc step_failed { step } {
 }
 
 
+start_step init_design
+set ACTIVE_STEP init_design
+set rc [catch {
+  create_msg_db init_design.pb
+  set_param chipscope.maxJobs 3
+  create_project -in_memory -part xc7s100fgga676-2
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.cache/wt [current_project]
+  set_property parent.project_path /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.xpr [current_project]
+  set_property ip_output_repo /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.runs/synth_1/top.dcp
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIRECT_RDOUT_DPRAM/DIRECT_RDOUT_DPRAM.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_32_22/DIST_BUFFER_32_22.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_2048_32/FIFO_2048_32.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_256_72/FIFO_256_72.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/AFE_PULSER_OUTPUT/AFE_PULSER_OUTPUT.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_RDOUT_DPRAM/HBUF_RDOUT_DPRAM.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/HBUF_DDR3_PG/HBUF_DDR3_PG.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/ddr3_idelay_clk_wiz/ddr3_idelay_clk_wiz.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_512_108/FIFO_512_108.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_2048_22/BUFFER_2048_22.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/DIST_BUFFER_128_12/DIST_BUFFER_128_12.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/PULSER_OUT_DIFF/PULSER_OUT_DIFF.xci
+  read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/FIFO_1024_16/FIFO_1024_16.xci
+  read_xdc /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/clocks.xdc
+  read_xdc /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc
+  link_design -top top -part xc7s100fgga676-2
+  close_msg_db -file init_design.pb
+} RESULT]
+if {$rc} {
+  step_failed init_design
+  return -code error $RESULT
+} else {
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force top_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force top_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file top_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file top_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force top_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file top_route_status.rpt -pb top_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force top_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
+  unset ACTIVE_STEP 
+}
+
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 3
-  open_checkpoint top_routed.dcp
-  set_property webtalk.parent_dir /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force top.mmi }
   write_bitstream -force top.bit -bin_file

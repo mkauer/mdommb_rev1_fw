@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/home/mkauer/DM_ICE_250/firmware/Xilinx/SDK/2019.1/bin:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/bin
+  PATH=/home/mkauer/software/xilinx-2019.1/SDK/2019.1/bin:/home/mkauer/software/xilinx-2019.1/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkauer/software/xilinx-2019.1/Vivado/2019.1/bin
 else
-  PATH=/home/mkauer/DM_ICE_250/firmware/Xilinx/SDK/2019.1/bin:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkauer/DM_ICE_250/firmware/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=/home/mkauer/software/xilinx-2019.1/SDK/2019.1/bin:/home/mkauer/software/xilinx-2019.1/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkauer/software/xilinx-2019.1/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Tue Aug 31 08:05:40 2021
+| Date             : Wed Sep 22 13:51:08 2021
 | Host             : matts-laptop running 64-bit Fedora release 32 (Thirty Two)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.872        |
+| Total On-Chip Power (W)  | 1.874        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.746        |
+| Dynamic (W)              | 1.747        |
 | Device Static (W)        | 0.126        |
 | Effective TJA (C/W)      | 2.4          |
 | Max Ambient (C)          | 80.4         |
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.244 |       33 |       --- |             --- |
-| Slice Logic              |     0.091 |    95645 |       --- |             --- |
-|   LUT as Logic           |     0.073 |    34577 |     64000 |           54.03 |
+| Clocks                   |     0.244 |       34 |       --- |             --- |
+| Slice Logic              |     0.091 |    95654 |       --- |             --- |
+|   LUT as Logic           |     0.072 |    34549 |     64000 |           53.98 |
 |   CARRY4                 |     0.009 |     6038 |     16000 |           37.74 |
 |   Register               |     0.007 |    40902 |    128000 |           31.95 |
 |   LUT as Distributed RAM |     0.001 |     1676 |     17600 |            9.52 |
 |   LUT as Shift Register  |    <0.001 |      305 |     17600 |            1.73 |
-|   F7/F8 Muxes            |    <0.001 |      950 |     64000 |            1.48 |
+|   F7/F8 Muxes            |    <0.001 |      957 |     64000 |            1.50 |
 |   Others                 |     0.000 |     2414 |       --- |             --- |
-| Signals                  |     0.125 |    72805 |       --- |             --- |
+| Signals                  |     0.127 |    72811 |       --- |             --- |
 | Block RAM                |     0.132 |       85 |       120 |           70.83 |
 | MMCM                     |     0.408 |        4 |         8 |           50.00 |
 | PLL                      |     0.115 |        1 |         8 |           12.50 |
@@ -69,7 +69,7 @@ Table of Contents
 | PHASER                   |     0.110 |       14 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
 | Static Power             |     0.126 |          |           |                 |
-| Total                    |     1.872 |          |           |                 |
+| Total                    |     1.874 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,8 +79,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.670 |       0.651 |      0.019 |
-| Vccaux    |       1.800 |     0.480 |       0.459 |      0.022 |
+| Vccint    |       1.000 |     0.671 |       0.652 |      0.019 |
+| Vccaux    |       1.800 |     0.481 |       0.459 |      0.022 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.056 |       0.052 |      0.004 |
@@ -139,6 +139,7 @@ Table of Contents
 | clk_out2_ddr3_idelay_clk_wiz                                                                                                                              | DDR3_IDELAY_CLK_WIZ_0/inst/clk_out2_ddr3_idelay_clk_wiz                                                                                                                                                             |             5.0 |
 | clk_out2_idelay_discr_clk_wiz                                                                                                                             | IDELAY_DISCR_CLK_WIZ_0/inst/clk_out2_idelay_discr_clk_wiz                                                                                                                                                           |             2.1 |
 | clk_out2_lclk_adcclk_wiz                                                                                                                                  | LCLK_ADCCLK_WIZ_0/inst/clk_out2_lclk_adcclk_wiz                                                                                                                                                                     |             2.8 |
+| clk_out3_lclk_adcclk_wiz                                                                                                                                  | LCLK_ADCCLK_WIZ_0/inst/clk_out3_lclk_adcclk_wiz                                                                                                                                                                     |             8.3 |
 | clk_pll_i                                                                                                                                                 | DDR3_TRANSFER_0/MIG_7_SERIES/u_mig_7series_0_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |            12.3 |
 | clkfbout_ddr3_idelay_clk_wiz                                                                                                                              | DDR3_IDELAY_CLK_WIZ_0/inst/clkfbout_ddr3_idelay_clk_wiz                                                                                                                                                             |            50.0 |
 | clkfbout_idelay_discr_clk_wiz                                                                                                                             | IDELAY_DISCR_CLK_WIZ_0/inst/clkfbout_idelay_discr_clk_wiz                                                                                                                                                           |            50.0 |
@@ -173,7 +174,7 @@ Table of Contents
 +------------------------------------------+-----------+
 | Name                                     | Power (W) |
 +------------------------------------------+-----------+
-| top                                      |     1.746 |
+| top                                      |     1.747 |
 |   AD5668_SPI                             |     0.008 |
 |     IILC_MISO_0                          |     0.002 |
 |     IILC_MOSI_0                          |     0.002 |
@@ -192,11 +193,11 @@ Table of Contents
 |   DDR3_IDELAY_CLK_WIZ_0                  |     0.106 |
 |     inst                                 |     0.106 |
 |   DDR3_MUX                               |     0.002 |
-|   DDR3_TRANSFER_0                        |     0.620 |
-|     MIG_7_SERIES                         |     0.617 |
-|       u_mig_7series_0_mig                |     0.615 |
+|   DDR3_TRANSFER_0                        |     0.619 |
+|     MIG_7_SERIES                         |     0.616 |
+|       u_mig_7series_0_mig                |     0.613 |
 |     PG_TRANS_CTRL                        |     0.003 |
-|   HBUF_CTRL_0                            |     0.017 |
+|   HBUF_CTRL_0                            |     0.016 |
 |     DDR3_PG_DPRAM_0                      |     0.007 |
 |       U0                                 |     0.007 |
 |     READER_DPRAM_0                       |     0.004 |
@@ -209,12 +210,12 @@ Table of Contents
 |     inst                                 |     0.105 |
 |   LCLK_ADCCLK_WIZ_0                      |     0.111 |
 |     inst                                 |     0.111 |
-|   LTC_0                                  |     0.008 |
+|   LTC_0                                  |     0.009 |
 |   PULSER_0                               |     0.002 |
-|   WVB_READER                             |     0.033 |
+|   WVB_READER                             |     0.034 |
 |     RD_CTRL                              |     0.003 |
-|   XDOM_0                                 |     0.040 |
-|     CRSM_0                               |     0.004 |
+|   XDOM_0                                 |     0.041 |
+|     CRSM_0                               |     0.005 |
 |     PG_DPRAM                             |     0.018 |
 |       U0                                 |     0.018 |
 |     RDOUT_DPRAM                          |     0.003 |
@@ -223,7 +224,7 @@ Table of Contents
 |       UART_PROC_HS_0                     |     0.002 |
 |     UART_ICM_0                           |     0.003 |
 |       UART_PROC_HS_0                     |     0.002 |
-|   adc_discr_iface_gen[0].ADC_DISCR_CHAN  |     0.007 |
+|   adc_discr_iface_gen[0].ADC_DISCR_CHAN  |     0.006 |
 |     ADC_SERDES_0                         |     0.003 |
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
@@ -238,7 +239,7 @@ Table of Contents
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
 |       inst                               |     0.003 |
-|   adc_discr_iface_gen[12].ADC_DISCR_CHAN |     0.007 |
+|   adc_discr_iface_gen[12].ADC_DISCR_CHAN |     0.006 |
 |     ADC_SERDES_0                         |     0.003 |
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
@@ -258,7 +259,7 @@ Table of Contents
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
 |       inst                               |     0.003 |
-|   adc_discr_iface_gen[16].ADC_DISCR_CHAN |     0.006 |
+|   adc_discr_iface_gen[16].ADC_DISCR_CHAN |     0.007 |
 |     ADC_SERDES_0                         |     0.003 |
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
@@ -293,7 +294,7 @@ Table of Contents
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
 |       inst                               |     0.003 |
-|   adc_discr_iface_gen[22].ADC_DISCR_CHAN |     0.007 |
+|   adc_discr_iface_gen[22].ADC_DISCR_CHAN |     0.006 |
 |     ADC_SERDES_0                         |     0.003 |
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
@@ -333,12 +334,12 @@ Table of Contents
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
 |       inst                               |     0.003 |
-|   adc_discr_iface_gen[8].ADC_DISCR_CHAN  |     0.007 |
+|   adc_discr_iface_gen[8].ADC_DISCR_CHAN  |     0.006 |
 |     ADC_SERDES_0                         |     0.003 |
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
 |       inst                               |     0.003 |
-|   adc_discr_iface_gen[9].ADC_DISCR_CHAN  |     0.007 |
+|   adc_discr_iface_gen[9].ADC_DISCR_CHAN  |     0.006 |
 |     ADC_SERDES_0                         |     0.003 |
 |       inst                               |     0.003 |
 |     ADC_SERDES_1                         |     0.003 |
@@ -385,7 +386,7 @@ Table of Contents
 |   scaler_gen[18].DISC_SCALER             |     0.002 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[18].THRESH_SCALER           |     0.002 |
-|   scaler_gen[19].DISC_SCALER             |     0.002 |
+|   scaler_gen[19].DISC_SCALER             |     0.003 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[19].THRESH_SCALER           |     0.002 |
 |   scaler_gen[1].DISC_SCALER              |     0.002 |
@@ -403,13 +404,13 @@ Table of Contents
 |   scaler_gen[23].DISC_SCALER             |     0.002 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[23].THRESH_SCALER           |     0.002 |
-|   scaler_gen[2].DISC_SCALER              |     0.003 |
+|   scaler_gen[2].DISC_SCALER              |     0.002 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[2].THRESH_SCALER            |     0.002 |
 |   scaler_gen[3].DISC_SCALER              |     0.002 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[3].THRESH_SCALER            |     0.002 |
-|   scaler_gen[4].DISC_SCALER              |     0.003 |
+|   scaler_gen[4].DISC_SCALER              |     0.002 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[4].THRESH_SCALER            |     0.002 |
 |   scaler_gen[5].DISC_SCALER              |     0.002 |
@@ -427,7 +428,7 @@ Table of Contents
 |   scaler_gen[9].DISC_SCALER              |     0.002 |
 |     INH_GEN                              |     0.001 |
 |   scaler_gen[9].THRESH_SCALER            |     0.002 |
-|   waveform_acq_gen[0].WFM_ACQ            |     0.012 |
+|   waveform_acq_gen[0].WFM_ACQ            |     0.011 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
@@ -445,7 +446,7 @@ Table of Contents
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[12].WFM_ACQ           |     0.011 |
+|   waveform_acq_gen[12].WFM_ACQ           |     0.012 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
@@ -457,7 +458,7 @@ Table of Contents
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[14].WFM_ACQ           |     0.012 |
+|   waveform_acq_gen[14].WFM_ACQ           |     0.011 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
@@ -475,7 +476,7 @@ Table of Contents
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[17].WFM_ACQ           |     0.012 |
+|   waveform_acq_gen[17].WFM_ACQ           |     0.011 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
@@ -493,7 +494,7 @@ Table of Contents
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[1].WFM_ACQ            |     0.011 |
+|   waveform_acq_gen[1].WFM_ACQ            |     0.012 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
@@ -507,11 +508,11 @@ Table of Contents
 |       WR_CTRL                            |     0.003 |
 |   waveform_acq_gen[21].WFM_ACQ           |     0.011 |
 |     ROLLING_BSUM                         |     0.002 |
-|     WVB                                  |     0.009 |
+|     WVB                                  |     0.008 |
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[22].WFM_ACQ           |     0.011 |
+|   waveform_acq_gen[22].WFM_ACQ           |     0.012 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
@@ -523,13 +524,13 @@ Table of Contents
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[2].WFM_ACQ            |     0.011 |
+|   waveform_acq_gen[2].WFM_ACQ            |     0.012 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
 |       WBS                                |     0.005 |
 |       WR_CTRL                            |     0.003 |
-|   waveform_acq_gen[3].WFM_ACQ            |     0.011 |
+|   waveform_acq_gen[3].WFM_ACQ            |     0.012 |
 |     ROLLING_BSUM                         |     0.002 |
 |     WVB                                  |     0.009 |
 |       PTB                                |     0.001 |
