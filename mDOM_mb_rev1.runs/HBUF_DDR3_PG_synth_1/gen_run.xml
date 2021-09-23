@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="HBUF_DDR3_PG_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1610745699">
-  <File Type="PA-TCL" Name="HBUF_DDR3_PG.tcl"/>
   <File Type="RDS-DCP" Name="HBUF_DDR3_PG.dcp"/>
+  <File Type="PA-TCL" Name="HBUF_DDR3_PG.tcl"/>
   <File Type="REPORTS-TCL" Name="HBUF_DDR3_PG_reports.tcl"/>
   <File Type="RDS-RDS" Name="HBUF_DDR3_PG.vds"/>
   <File Type="RDS-UTIL" Name="HBUF_DDR3_PG_utilization_synth.rpt"/>

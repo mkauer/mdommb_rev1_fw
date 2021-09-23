@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="BUFFER_1024_22_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1605028722">
-  <File Type="PA-TCL" Name="BUFFER_1024_22.tcl"/>
   <File Type="RDS-DCP" Name="BUFFER_1024_22.dcp"/>
+  <File Type="PA-TCL" Name="BUFFER_1024_22.tcl"/>
   <File Type="REPORTS-TCL" Name="BUFFER_1024_22_reports.tcl"/>
   <File Type="RDS-RDS" Name="BUFFER_1024_22.vds"/>
   <File Type="RDS-UTIL" Name="BUFFER_1024_22_utilization_synth.rpt"/>

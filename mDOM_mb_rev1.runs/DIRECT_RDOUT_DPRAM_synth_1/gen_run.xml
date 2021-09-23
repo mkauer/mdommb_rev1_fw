@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="DIRECT_RDOUT_DPRAM_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1605029150">
-  <File Type="PA-TCL" Name="DIRECT_RDOUT_DPRAM.tcl"/>
   <File Type="RDS-DCP" Name="DIRECT_RDOUT_DPRAM.dcp"/>
+  <File Type="PA-TCL" Name="DIRECT_RDOUT_DPRAM.tcl"/>
   <File Type="REPORTS-TCL" Name="DIRECT_RDOUT_DPRAM_reports.tcl"/>
   <File Type="RDS-RDS" Name="DIRECT_RDOUT_DPRAM.vds"/>
   <File Type="RDS-UTIL" Name="DIRECT_RDOUT_DPRAM_utilization_synth.rpt"/>

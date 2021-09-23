@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Sep 22 13:51:11 2021
+| Date         : Wed Sep 22 20:56:13 2021
 | Host         : matts-laptop running 64-bit Fedora release 32 (Thirty Two)
 | Command      : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
 | Design       : top
@@ -203,11 +203,11 @@ fpga_clk                                                                        
     pll_clkfbout                                                                                                                                                                                                                                                                                                   8.751        0.000                       0                     2  
     sync_pulse                                                                                                                                                                                                                                                                                                     2.005        0.000                       0                     8  
   clk_out1_idelay_discr_clk_wiz                                                                                                                                        3.101        0.000                      0                  262        0.159        0.000                      0                  262        3.667        0.000                       0                   276  
-  clk_out1_lclk_adcclk_wiz                                                                                                                                             0.062        0.000                      0                91144        0.053        0.000                      0                91144        3.037        0.000                       0                 38972  
+  clk_out1_lclk_adcclk_wiz                                                                                                                                             0.062        0.000                      0                91144        0.053        0.000                      0                91144        3.037        0.000                       0                 38970  
   clk_out2_ddr3_idelay_clk_wiz                                                                                                                                         2.593        0.000                      0                  126        0.110        0.000                      0                  126        0.264        0.000                       0                    69  
   clk_out2_idelay_discr_clk_wiz                                                                                                                                                                                                                                                                                    0.491        0.000                       0                    52  
   clk_out2_lclk_adcclk_wiz                                                                                                                                                                                                                                                                                         1.185        0.000                       0                    98  
-  clk_out3_lclk_adcclk_wiz                                                                                                                                                                                                                                                                                         6.741        0.000                       0                     3  
+  clk_out3_lclk_adcclk_wiz                                                                                                                                                                                                                                                                                         6.741        0.000                       0                     5  
   clkfbout_ddr3_idelay_clk_wiz                                                                                                                                                                                                                                                                                    48.408        0.000                       0                     3  
   clkfbout_idelay_discr_clk_wiz                                                                                                                                                                                                                                                                                   48.408        0.000                       0                     3  
   clkfbout_lclk_adcclk_wiz                                                                                                                                                                                                                                                                                        48.408        0.000                       0                     3  
@@ -16118,7 +16118,7 @@ Slack (MET) :             0.062ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.423    -1.036    XDOM_0/CRSM_0/clk_out1
+                         net (fo=38968, routed)       1.423    -1.036    XDOM_0/CRSM_0/clk_out1
     SLICE_X79Y115        FDRE                                         r  XDOM_0/CRSM_0/i_y_adr_reg[6]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X79Y115        FDRE (Prop_fdre_C_Q)         0.379    -0.657 f  XDOM_0/CRSM_0/i_y_adr_reg[6]/Q
@@ -16156,7 +16156,7 @@ Slack (MET) :             0.062ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.255     6.819    XDOM_0/CRSM_0/clk_out1
+                         net (fo=38968, routed)       1.255     6.819    XDOM_0/CRSM_0/clk_out1
     SLICE_X64Y99         FDRE                                         r  XDOM_0/CRSM_0/i_y_rd_data_1_reg[1]/C
                          clock pessimism              0.310     7.129    
                          clock uncertainty           -0.113     7.016    
@@ -16198,7 +16198,7 @@ Slack (MET) :             0.115ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.422    -1.037    XDOM_0/CRSM_0/clk_out1
+                         net (fo=38968, routed)       1.422    -1.037    XDOM_0/CRSM_0/clk_out1
     SLICE_X78Y116        FDRE                                         r  XDOM_0/CRSM_0/i_y_adr_reg[8]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X78Y116        FDRE (Prop_fdre_C_Q)         0.379    -0.658 r  XDOM_0/CRSM_0/i_y_adr_reg[8]/Q
@@ -16234,7 +16234,7 @@ Slack (MET) :             0.115ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.313     6.877    XDOM_0/CRSM_0/clk_out1
+                         net (fo=38968, routed)       1.313     6.877    XDOM_0/CRSM_0/clk_out1
     SLICE_X75Y101        FDRE                                         r  XDOM_0/CRSM_0/i_y_rd_data_1_reg[13]/C
                          clock pessimism              0.376     7.252    
                          clock uncertainty           -0.113     7.140    
@@ -16276,7 +16276,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16296,7 +16296,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.397     6.961    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.397     6.961    WVB_READER/clk_out1
     SLICE_X9Y25          FDRE                                         r  WVB_READER/chan_index_reg[0]_rep__4/C
                          clock pessimism              0.310     7.271    
                          clock uncertainty           -0.113     7.159    
@@ -16338,7 +16338,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16358,7 +16358,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.397     6.961    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.397     6.961    WVB_READER/clk_out1
     SLICE_X9Y25          FDRE                                         r  WVB_READER/chan_index_reg[0]_rep__6/C
                          clock pessimism              0.310     7.271    
                          clock uncertainty           -0.113     7.159    
@@ -16400,7 +16400,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16420,7 +16420,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.397     6.961    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.397     6.961    WVB_READER/clk_out1
     SLICE_X9Y25          FDRE                                         r  WVB_READER/chan_index_reg[0]_rep__7/C
                          clock pessimism              0.310     7.271    
                          clock uncertainty           -0.113     7.159    
@@ -16462,7 +16462,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16482,7 +16482,7 @@ Slack (MET) :             0.149ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.397     6.961    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.397     6.961    WVB_READER/clk_out1
     SLICE_X9Y25          FDRE                                         r  WVB_READER/chan_index_reg[1]_rep__7/C
                          clock pessimism              0.310     7.271    
                          clock uncertainty           -0.113     7.159    
@@ -16524,7 +16524,7 @@ Slack (MET) :             0.188ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16544,7 +16544,7 @@ Slack (MET) :             0.188ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.472     7.036    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.472     7.036    WVB_READER/clk_out1
     SLICE_X5Y32          FDRE                                         r  WVB_READER/hdr_data_reg_reg[1155]/C
                          clock pessimism              0.310     7.346    
                          clock uncertainty           -0.113     7.234    
@@ -16586,7 +16586,7 @@ Slack (MET) :             0.188ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16606,7 +16606,7 @@ Slack (MET) :             0.188ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.472     7.036    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.472     7.036    WVB_READER/clk_out1
     SLICE_X5Y32          FDRE                                         r  WVB_READER/hdr_data_reg_reg[1157]/C
                          clock pessimism              0.310     7.346    
                          clock uncertainty           -0.113     7.234    
@@ -16648,7 +16648,7 @@ Slack (MET) :             0.217ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16668,7 +16668,7 @@ Slack (MET) :             0.217ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.397     6.961    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.397     6.961    WVB_READER/clk_out1
     SLICE_X12Y25         FDRE                                         r  WVB_READER/chan_index_reg[0]_rep/C
                          clock pessimism              0.310     7.271    
                          clock uncertainty           -0.113     7.159    
@@ -16710,7 +16710,7 @@ Slack (MET) :             0.220ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.344    -1.115    clk_120MHz
+                         net (fo=38968, routed)       1.344    -1.115    clk_120MHz
     SLICE_X49Y108        FDRE                                         r  i_wvb_reader_en_2_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X49Y108        FDRE (Prop_fdre_C_Q)         0.379    -0.736 f  i_wvb_reader_en_2_reg/Q
@@ -16730,7 +16730,7 @@ Slack (MET) :             0.220ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.479     7.043    WVB_READER/clk_out1
+                         net (fo=38968, routed)       1.479     7.043    WVB_READER/clk_out1
     SLICE_X5Y42          FDRE                                         r  WVB_READER/hdr_data_reg_reg[1055]/C
                          clock pessimism              0.310     7.353    
                          clock uncertainty           -0.113     7.241    
@@ -16774,7 +16774,7 @@ Slack (MET) :             0.053ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.558    -0.476    scaler_gen[2].THRESH_SCALER/INH_GEN/clk_out1
+                         net (fo=38968, routed)       0.558    -0.476    scaler_gen[2].THRESH_SCALER/INH_GEN/clk_out1
     SLICE_X44Y141        FDRE                                         r  scaler_gen[2].THRESH_SCALER/INH_GEN/inhibit_bits_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X44Y141        FDRE (Prop_fdre_C_Q)         0.141    -0.335 f  scaler_gen[2].THRESH_SCALER/INH_GEN/inhibit_bits_reg/Q
@@ -16794,7 +16794,7 @@ Slack (MET) :             0.053ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.825    -0.875    scaler_gen[2].THRESH_SCALER/clk_out1
+                         net (fo=38968, routed)       0.825    -0.875    scaler_gen[2].THRESH_SCALER/clk_out1
     SLICE_X50Y145        FDRE                                         r  scaler_gen[2].THRESH_SCALER/last_pedge_sum_reg[0]/C
                          clock pessimism              0.661    -0.214    
     SLICE_X50Y145        FDRE (Hold_fdre_C_D)         0.120    -0.094    scaler_gen[2].THRESH_SCALER/last_pedge_sum_reg[0]
@@ -16831,7 +16831,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.635    -0.399    waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/clk_out1
+                         net (fo=38968, routed)       0.635    -0.399    waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/clk_out1
     SLICE_X8Y14          FDRE                                         r  waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/i_bsum_reg[15]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y14          FDRE (Prop_fdre_C_Q)         0.164    -0.235 r  waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/i_bsum_reg[15]/Q
@@ -16849,7 +16849,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.951    -0.748    waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clk
+                         net (fo=38968, routed)       0.951    -0.748    waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clk
     RAMB36_X0Y2          RAMB36E1                                     r  waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
                          clock pessimism              0.406    -0.342    
     RAMB36_X0Y2          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[21])
@@ -16887,7 +16887,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.635    -0.399    waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/clk_out1
+                         net (fo=38968, routed)       0.635    -0.399    waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/clk_out1
     SLICE_X8Y14          FDRE                                         r  waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/i_bsum_reg[17]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y14          FDRE (Prop_fdre_C_Q)         0.164    -0.235 r  waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/i_bsum_reg[17]/Q
@@ -16905,7 +16905,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.951    -0.748    waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clk
+                         net (fo=38968, routed)       0.951    -0.748    waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clk
     RAMB36_X0Y2          RAMB36E1                                     r  waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
                          clock pessimism              0.406    -0.342    
     RAMB36_X0Y2          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[23])
@@ -16943,7 +16943,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.635    -0.399    waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/clk_out1
+                         net (fo=38968, routed)       0.635    -0.399    waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/clk_out1
     SLICE_X8Y14          FDRE                                         r  waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/i_bsum_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y14          FDRE (Prop_fdre_C_Q)         0.164    -0.235 r  waveform_acq_gen[4].WFM_ACQ/WVB/WR_CTRL/i_bsum_reg[2]/Q
@@ -16961,7 +16961,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.951    -0.748    waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clk
+                         net (fo=38968, routed)       0.951    -0.748    waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clk
     RAMB36_X0Y2          RAMB36E1                                     r  waveform_acq_gen[4].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/CLKBWRCLK
                          clock pessimism              0.406    -0.342    
     RAMB36_X0Y2          RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[9])
@@ -16999,7 +16999,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
+                         net (fo=38968, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
     SLICE_X3Y62          FDRE                                         r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y62          FDRE (Prop_fdre_C_Q)         0.141    -0.294 r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/Q
@@ -17017,7 +17017,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
+                         net (fo=38968, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
     SLICE_X6Y62          RAMD64E                                      r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/RAMA/CLK
                          clock pessimism              0.432    -0.399    
     SLICE_X6Y62          RAMD64E (Hold_ramd64e_CLK_WADR4)
@@ -17055,7 +17055,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
+                         net (fo=38968, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
     SLICE_X3Y62          FDRE                                         r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y62          FDRE (Prop_fdre_C_Q)         0.141    -0.294 r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/Q
@@ -17073,7 +17073,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
+                         net (fo=38968, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
     SLICE_X6Y62          RAMD64E                                      r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/RAMB/CLK
                          clock pessimism              0.432    -0.399    
     SLICE_X6Y62          RAMD64E (Hold_ramd64e_CLK_WADR4)
@@ -17111,7 +17111,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
+                         net (fo=38968, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
     SLICE_X3Y62          FDRE                                         r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y62          FDRE (Prop_fdre_C_Q)         0.141    -0.294 r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/Q
@@ -17129,7 +17129,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
+                         net (fo=38968, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
     SLICE_X6Y62          RAMD64E                                      r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/RAMC/CLK
                          clock pessimism              0.432    -0.399    
     SLICE_X6Y62          RAMD64E (Hold_ramd64e_CLK_WADR4)
@@ -17167,7 +17167,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
+                         net (fo=38968, routed)       0.599    -0.435    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/clk
     SLICE_X3Y62          FDRE                                         r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y62          FDRE (Prop_fdre_C_Q)         0.141    -0.294 r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/a_reg_reg[4]/Q
@@ -17185,7 +17185,7 @@ Slack (MET) :             0.055ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
+                         net (fo=38968, routed)       0.869    -0.831    waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/WCLK
     SLICE_X6Y62          RAMD64E                                      r  waveform_acq_gen[13].WFM_ACQ/ROLLING_BSUM/sample_buffer/U0/synth_options.dist_mem_inst/gen_sdp_ram.sdpram_inst/ram_reg_64_127_0_2/RAMD/CLK
                          clock pessimism              0.432    -0.399    
     SLICE_X6Y62          RAMD64E (Hold_ramd64e_CLK_WADR4)
@@ -17223,7 +17223,7 @@ Slack (MET) :             0.056ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.595    -0.439    scaler_gen[23].DISC_SCALER/INH_GEN/clk_out1
+                         net (fo=38968, routed)       0.595    -0.439    scaler_gen[23].DISC_SCALER/INH_GEN/clk_out1
     SLICE_X80Y149        FDRE                                         r  scaler_gen[23].DISC_SCALER/INH_GEN/cnt_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X80Y149        FDRE (Prop_fdre_C_Q)         0.164    -0.275 r  scaler_gen[23].DISC_SCALER/INH_GEN/cnt_reg[19]/Q
@@ -17249,7 +17249,7 @@ Slack (MET) :             0.056ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.953    -0.747    scaler_gen[23].DISC_SCALER/INH_GEN/clk_out1
+                         net (fo=38968, routed)       0.953    -0.747    scaler_gen[23].DISC_SCALER/INH_GEN/clk_out1
     SLICE_X80Y150        FDRE                                         r  scaler_gen[23].DISC_SCALER/INH_GEN/cnt_reg[20]/C
                          clock pessimism              0.661    -0.086    
     SLICE_X80Y150        FDRE (Hold_fdre_C_D)         0.134     0.048    scaler_gen[23].DISC_SCALER/INH_GEN/cnt_reg[20]
@@ -17286,7 +17286,7 @@ Slack (MET) :             0.057ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.639    -0.395    waveform_acq_gen[3].WFM_ACQ/WVB/WR_CTRL/clk_out1
+                         net (fo=38968, routed)       0.639    -0.395    waveform_acq_gen[3].WFM_ACQ/WVB/WR_CTRL/clk_out1
     SLICE_X8Y4           FDRE                                         r  waveform_acq_gen[3].WFM_ACQ/WVB/WR_CTRL/i_evt_ltc_reg[23]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X8Y4           FDRE (Prop_fdre_C_Q)         0.164    -0.231 r  waveform_acq_gen[3].WFM_ACQ/WVB/WR_CTRL/i_evt_ltc_reg[23]/Q
@@ -17304,7 +17304,7 @@ Slack (MET) :             0.057ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.954    -0.745    waveform_acq_gen[3].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clk
+                         net (fo=38968, routed)       0.954    -0.745    waveform_acq_gen[3].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/clk
     RAMB18_X0Y1          RAMB18E1                                     r  waveform_acq_gen[3].WFM_ACQ/WVB/WBS/HDR_FIFO_FMT_0/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmgc.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/CLKBWRCLK
                          clock pessimism              0.406    -0.339    
     RAMB18_X0Y1          RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_DIBDI[5])
@@ -18767,7 +18767,9 @@ Sources:            { LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT2 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
 Min Period  n/a     BUFG/I              n/a            1.592         8.333       6.741      BUFGCTRL_X0Y19   LCLK_ADCCLK_WIZ_0/inst/clkout3_buf/I
+Min Period  n/a     ODDR/C              n/a            1.474         8.333       6.859      OLOGIC_X0Y18     clk_IO_0/clk_forward/C
 Min Period  n/a     ODDR/C              n/a            1.474         8.333       6.859      OLOGIC_X0Y64     clk_IO_2/clk_forward/C
+Min Period  n/a     ODDR/C              n/a            1.474         8.333       6.859      OLOGIC_X0Y142    clk_IO_4/clk_forward/C
 Min Period  n/a     MMCME2_ADV/CLKOUT2  n/a            1.249         8.333       7.084      MMCME2_ADV_X1Y2  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT2
 Max Period  n/a     MMCME2_ADV/CLKOUT2  n/a            213.360       8.333       205.027    MMCME2_ADV_X1Y2  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT2
 
@@ -29904,7 +29906,7 @@ Slack (MET) :             1.867ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -29967,7 +29969,7 @@ Slack (MET) :             2.053ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30030,7 +30032,7 @@ Slack (MET) :             2.061ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30093,7 +30095,7 @@ Slack (MET) :             2.261ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30156,7 +30158,7 @@ Slack (MET) :             2.397ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30219,7 +30221,7 @@ Slack (MET) :             2.426ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30282,7 +30284,7 @@ Slack (MET) :             2.502ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_io_rst_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_io_rst_reg/Q
@@ -30343,7 +30345,7 @@ Slack (MET) :             2.509ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30406,7 +30408,7 @@ Slack (MET) :             2.592ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.420    -1.039    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.420    -1.039    XDOM_0/clk_out1
     SLICE_X73Y105        FDRE                                         r  XDOM_0/fpga_cal_trig_pol_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X73Y105        FDRE (Prop_fdre_C_Q)         0.348    -0.691 r  XDOM_0/fpga_cal_trig_pol_reg/Q
@@ -30469,7 +30471,7 @@ Slack (MET) :             2.889ns  (required time - arrival time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.368    -1.091    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.368    -1.091    XDOM_0/clk_out1
     SLICE_X66Y95         FDRE                                         r  XDOM_0/discr_io_reset_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X66Y95         FDRE (Prop_fdre_C_Q)         0.398    -0.693 r  XDOM_0/discr_io_reset_reg[19]/Q
@@ -30536,7 +30538,7 @@ Slack (MET) :             0.090ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.255    -1.515    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.255    -1.515    XDOM_0/clk_out1
     SLICE_X66Y94         FDRE                                         r  XDOM_0/pulser_width_reg[10]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X66Y94         FDRE (Prop_fdre_C_Q)         0.347    -1.168 r  XDOM_0/pulser_width_reg[10]/Q
@@ -30598,7 +30600,7 @@ Slack (MET) :             0.156ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.401    -1.369    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.401    -1.369    XDOM_0/clk_out1
     SLICE_X40Y39         FDRE                                         r  XDOM_0/discr_bitslip_1_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X40Y39         FDRE (Prop_fdre_C_Q)         0.304    -1.065 r  XDOM_0/discr_bitslip_1_reg[4]/Q
@@ -30659,7 +30661,7 @@ Slack (MET) :             0.218ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.255    -1.515    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.255    -1.515    XDOM_0/clk_out1
     SLICE_X66Y94         FDRE                                         r  XDOM_0/pulser_width_reg[5]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X66Y94         FDRE (Prop_fdre_C_Q)         0.319    -1.196 r  XDOM_0/pulser_width_reg[5]/Q
@@ -30721,7 +30723,7 @@ Slack (MET) :             0.240ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.228    -1.541    CAL_PULSER_0/trig_os/clk_out1
+                         net (fo=38968, routed)       1.228    -1.541    CAL_PULSER_0/trig_os/clk_out1
     SLICE_X51Y132        FDRE                                         r  CAL_PULSER_0/trig_os/FSM_onehot_fsm_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X51Y132        FDRE (Prop_fdre_C_Q)         0.304    -1.237 r  CAL_PULSER_0/trig_os/FSM_onehot_fsm_reg[2]/Q
@@ -30781,7 +30783,7 @@ Slack (MET) :             0.247ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.470    -1.300    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.470    -1.300    XDOM_0/clk_out1
     SLICE_X76Y46         FDRE                                         r  XDOM_0/discr_bitslip_1_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X76Y46         FDRE (Prop_fdre_C_Q)         0.347    -0.953 r  XDOM_0/discr_bitslip_1_reg[1]/Q
@@ -30842,7 +30844,7 @@ Slack (MET) :             0.366ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.408    -1.362    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.408    -1.362    XDOM_0/clk_out1
     SLICE_X32Y46         FDRE                                         r  XDOM_0/discr_bitslip_1_reg[2]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X32Y46         FDRE (Prop_fdre_C_Q)         0.304    -1.058 r  XDOM_0/discr_bitslip_1_reg[2]/Q
@@ -30903,7 +30905,7 @@ Slack (MET) :             0.376ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.468    -1.302    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.468    -1.302    XDOM_0/clk_out1
     SLICE_X74Y43         FDRE                                         r  XDOM_0/discr_bitslip_1_reg[19]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X74Y43         FDRE (Prop_fdre_C_Q)         0.347    -0.955 r  XDOM_0/discr_bitslip_1_reg[19]/Q
@@ -30964,7 +30966,7 @@ Slack (MET) :             0.387ns  (arrival time - required time)
                                                      -2.369    -1.555 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.495    -1.060    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.034 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.563    -0.471    XDOM_0/clk_out1
+                         net (fo=38968, routed)       0.563    -0.471    XDOM_0/clk_out1
     SLICE_X61Y97         FDRE                                         r  XDOM_0/pulser_io_rst_reg[0]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X61Y97         FDRE (Prop_fdre_C_Q)         0.141    -0.330 r  XDOM_0/pulser_io_rst_reg[0]/Q
@@ -31025,7 +31027,7 @@ Slack (MET) :             0.388ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.406    -1.364    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.406    -1.364    XDOM_0/clk_out1
     SLICE_X32Y39         FDRE                                         r  XDOM_0/discr_bitslip_1_reg[5]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X32Y39         FDRE (Prop_fdre_C_Q)         0.304    -1.060 r  XDOM_0/discr_bitslip_1_reg[5]/Q
@@ -31086,7 +31088,7 @@ Slack (MET) :             0.397ns  (arrival time - required time)
                                                      -6.068    -4.217 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371    -2.847    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    -2.770 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.407    -1.363    XDOM_0/clk_out1
+                         net (fo=38968, routed)       1.407    -1.363    XDOM_0/clk_out1
     SLICE_X32Y41         FDRE                                         r  XDOM_0/discr_bitslip_1_reg[7]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X32Y41         FDRE (Prop_fdre_C_Q)         0.304    -1.059 r  XDOM_0/discr_bitslip_1_reg[7]/Q
@@ -31824,7 +31826,7 @@ Slack (MET) :             3.141ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y82         SRL16E                                       r  adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[69]_srl10/CLK
                          clock pessimism              0.040     6.938    
                          clock uncertainty           -0.656     6.281    
@@ -31885,7 +31887,7 @@ Slack (MET) :             3.179ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y82         SRL16E                                       r  adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[68]_srl10/CLK
                          clock pessimism              0.040     6.938    
                          clock uncertainty           -0.656     6.281    
@@ -31946,7 +31948,7 @@ Slack (MET) :             3.305ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y82         SRL16E                                       r  adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[65]_srl10/CLK
                          clock pessimism              0.040     6.938    
                          clock uncertainty           -0.656     6.281    
@@ -32007,7 +32009,7 @@ Slack (MET) :             3.331ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.327     6.891    adc_discr_iface_gen[22].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.327     6.891    adc_discr_iface_gen[22].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y76         SRL16E                                       r  adc_discr_iface_gen[22].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[68]_srl10/CLK
                          clock pessimism              0.040     6.931    
                          clock uncertainty           -0.656     6.274    
@@ -32068,7 +32070,7 @@ Slack (MET) :             3.358ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y74         SRL16E                                       r  adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[70]_srl10/CLK
                          clock pessimism              0.040     6.930    
                          clock uncertainty           -0.656     6.273    
@@ -32129,7 +32131,7 @@ Slack (MET) :             3.441ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y74         SRL16E                                       r  adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[69]_srl10/CLK
                          clock pessimism              0.040     6.930    
                          clock uncertainty           -0.656     6.273    
@@ -32190,7 +32192,7 @@ Slack (MET) :             3.474ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y74         SRL16E                                       r  adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[65]_srl10/CLK
                          clock pessimism              0.040     6.930    
                          clock uncertainty           -0.656     6.273    
@@ -32251,7 +32253,7 @@ Slack (MET) :             3.515ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.331     6.895    adc_discr_iface_gen[21].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.331     6.895    adc_discr_iface_gen[21].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y79         SRL16E                                       r  adc_discr_iface_gen[21].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[69]_srl10/CLK
                          clock pessimism              0.040     6.935    
                          clock uncertainty           -0.656     6.278    
@@ -32312,7 +32314,7 @@ Slack (MET) :             3.543ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.326     6.890    adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y74         SRL16E                                       r  adc_discr_iface_gen[23].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[67]_srl10/CLK
                          clock pessimism              0.040     6.930    
                          clock uncertainty           -0.656     6.273    
@@ -32373,7 +32375,7 @@ Slack (MET) :             3.552ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.334     6.898    adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y82         SRL16E                                       r  adc_discr_iface_gen[18].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[67]_srl10/CLK
                          clock pessimism              0.040     6.938    
                          clock uncertainty           -0.656     6.281    
@@ -32440,7 +32442,7 @@ Slack (MET) :             0.108ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.453    -1.006    adc_discr_iface_gen[2].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.453    -1.006    adc_discr_iface_gen[2].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y50         SRL16E                                       r  adc_discr_iface_gen[2].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[67]_srl10/CLK
                          clock pessimism             -0.040    -1.046    
                          clock uncertainty            0.656    -0.390    
@@ -32501,7 +32503,7 @@ Slack (MET) :             0.132ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.449    -1.010    adc_discr_iface_gen[8].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.449    -1.010    adc_discr_iface_gen[8].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y62         SRL16E                                       r  adc_discr_iface_gen[8].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[68]_srl10/CLK
                          clock pessimism             -0.040    -1.050    
                          clock uncertainty            0.656    -0.394    
@@ -32562,7 +32564,7 @@ Slack (MET) :             0.175ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.596    -0.863    adc_discr_iface_gen[7].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.596    -0.863    adc_discr_iface_gen[7].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y42         SRL16E                                       r  adc_discr_iface_gen[7].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[69]_srl10/CLK
                          clock pessimism             -0.040    -0.903    
                          clock uncertainty            0.656    -0.247    
@@ -32623,7 +32625,7 @@ Slack (MET) :             0.218ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X76Y61         SRL16E                                       r  adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[71]_srl10/CLK
                          clock pessimism             -0.040    -1.058    
                          clock uncertainty            0.656    -0.402    
@@ -32684,7 +32686,7 @@ Slack (MET) :             0.248ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X76Y61         SRL16E                                       r  adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[65]_srl10/CLK
                          clock pessimism             -0.040    -1.058    
                          clock uncertainty            0.656    -0.402    
@@ -32745,7 +32747,7 @@ Slack (MET) :             0.254ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X76Y61         SRL16E                                       r  adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[68]_srl10/CLK
                          clock pessimism             -0.040    -1.058    
                          clock uncertainty            0.656    -0.402    
@@ -32806,7 +32808,7 @@ Slack (MET) :             0.262ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X76Y61         SRL16E                                       r  adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[67]_srl10/CLK
                          clock pessimism             -0.040    -1.058    
                          clock uncertainty            0.656    -0.402    
@@ -32867,7 +32869,7 @@ Slack (MET) :             0.266ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.597    -0.862    adc_discr_iface_gen[1].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.597    -0.862    adc_discr_iface_gen[1].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y46         SRL16E                                       r  adc_discr_iface_gen[1].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[71]_srl10/CLK
                          clock pessimism             -0.040    -0.902    
                          clock uncertainty            0.656    -0.246    
@@ -32928,7 +32930,7 @@ Slack (MET) :             0.275ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.586    -0.873    adc_discr_iface_gen[6].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.586    -0.873    adc_discr_iface_gen[6].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X84Y31         SRL16E                                       r  adc_discr_iface_gen[6].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[68]_srl10/CLK
                          clock pessimism             -0.040    -0.913    
                          clock uncertainty            0.656    -0.257    
@@ -32989,7 +32991,7 @@ Slack (MET) :             0.283ns  (arrival time - required time)
                                                      -5.932    -3.980 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.440    -2.540    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.081    -2.459 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
+                         net (fo=38968, routed)       1.441    -1.018    adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/clk_out1
     SLICE_X76Y61         SRL16E                                       r  adc_discr_iface_gen[5].ADC_DISCR_CHAN/DISC_DEL_0/delay_n.dn/old_words_reg[64]_srl10/CLK
                          clock pessimism             -0.040    -1.058    
                          clock uncertainty            0.656    -0.402    
@@ -33060,7 +33062,7 @@ Slack (MET) :             2.391ns  (required time - arrival time)
                                                      -6.068     4.116 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.371     5.487    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077     5.564 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       1.254     6.818    ICM_TIME_TRANSFER/SYNC_ICM_FPGA_SYNC_0/clk
+                         net (fo=38968, routed)       1.254     6.818    ICM_TIME_TRANSFER/SYNC_ICM_FPGA_SYNC_0/clk
     SLICE_X63Y93         FDRE                                         r  ICM_TIME_TRANSFER/SYNC_ICM_FPGA_SYNC_0/ff_reg[0]/C
                          clock pessimism              0.000     6.818    
                          clock uncertainty           -0.411     6.407    
@@ -33121,7 +33123,7 @@ Slack (MET) :             2.491ns  (arrival time - required time)
                                                      -3.153    -2.268 r  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.540    -1.729    LCLK_ADCCLK_WIZ_0/inst/clk_out1_lclk_adcclk_wiz
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.700 r  LCLK_ADCCLK_WIZ_0/inst/clkout1_buf/O
-                         net (fo=38970, routed)       0.834    -0.866    ICM_TIME_TRANSFER/SYNC_ICM_FPGA_SYNC_0/clk
+                         net (fo=38968, routed)       0.834    -0.866    ICM_TIME_TRANSFER/SYNC_ICM_FPGA_SYNC_0/clk
     SLICE_X63Y93         FDRE                                         r  ICM_TIME_TRANSFER/SYNC_ICM_FPGA_SYNC_0/ff_reg[0]/C
                          clock pessimism              0.000    -0.866    
                          clock uncertainty            0.411    -0.455    

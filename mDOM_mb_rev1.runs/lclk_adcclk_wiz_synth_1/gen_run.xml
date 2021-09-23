@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="lclk_adcclk_wiz_synth_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1632332236">
-  <File Type="VDS-TIMING-PB" Name="lclk_adcclk_wiz_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="lclk_adcclk_wiz_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="lclk_adcclk_wiz.tcl"/>
+  <File Type="REPORTS-TCL" Name="lclk_adcclk_wiz_reports.tcl"/>
+  <File Type="RDS-RDS" Name="lclk_adcclk_wiz.vds"/>
   <File Type="RDS-DCP" Name="lclk_adcclk_wiz.dcp"/>
   <File Type="RDS-UTIL-PB" Name="lclk_adcclk_wiz_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="lclk_adcclk_wiz_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="lclk_adcclk_wiz_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="lclk_adcclk_wiz.vds"/>
-  <File Type="REPORTS-TCL" Name="lclk_adcclk_wiz_reports.tcl"/>
-  <File Type="PA-TCL" Name="lclk_adcclk_wiz.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/lclk_adcclk_wiz">
     <File Path="$PSRCDIR/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci">
       <FileInfo>

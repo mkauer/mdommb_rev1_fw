@@ -333,6 +333,7 @@ module top (
 `include "mDOM_wvb_hdr_bundle_2_inc.v"
 `include "mDOM_bsum_bundle_inc.v"
 
+// using 0x1000 for dm-ice testing
 localparam[15:0] FW_VNUM = 16'h1000;
 
 // 1 for icm clock, 0 for Q_OSC
@@ -418,7 +419,8 @@ wire[5:0] i_adc_dclock;
 wire[5:0] i_adc_fclock;
 
 // chans 0-3
-ADC3424_clk_IO clk_IO_0(.enc_clk(i_adc_clock),
+// phase shifting this one
+ADC3424_clk_IO clk_IO_0(.enc_clk(i_adc_clock2),
                         .dclk_P(ADC0_DCLK_P), .dclk_N(ADC0_DCLK_M), .dclk_out(i_adc_dclock[0]),
                         .fclk_P(ADC0_FCLK_P), .fclk_N(ADC0_FCLK_M), .fclk_out(i_adc_fclock[0]),
                         .adc_clk_P(ADC0_CLOCK_P), .adc_clk_N(ADC0_CLOCK_M),
@@ -430,7 +432,7 @@ ADC3424_clk_IO clk_IO_1(.enc_clk(i_adc_clock),
                         .adc_clk_P(ADC1_CLOCK_P), .adc_clk_N(ADC1_CLOCK_M),
                         .sysrf_P(ADC1_SYSRF_P), .sysrf_N(ADC1_SYSRF_M));
 // chans 8-11
-// let's just phase shift this one for now
+// phase shifting this one
 ADC3424_clk_IO clk_IO_2(.enc_clk(i_adc_clock2),
                         .dclk_P(ADC2_DCLK_P), .dclk_N(ADC2_DCLK_M), .dclk_out(i_adc_dclock[2]),
                         .fclk_P(ADC2_FCLK_P), .fclk_N(ADC2_FCLK_M), .fclk_out(i_adc_fclock[2]),
@@ -443,7 +445,8 @@ ADC3424_clk_IO clk_IO_3(.enc_clk(i_adc_clock),
                         .adc_clk_P(ADC3_CLOCK_P), .adc_clk_N(ADC3_CLOCK_M),
                         .sysrf_P(ADC3_SYSRF_P), .sysrf_N(ADC3_SYSRF_M));
 // chans 16-19
-ADC3424_clk_IO clk_IO_4(.enc_clk(i_adc_clock),
+// phase shifting this one
+ADC3424_clk_IO clk_IO_4(.enc_clk(i_adc_clock2),
                         .dclk_P(ADC4_DCLK_P), .dclk_N(ADC4_DCLK_M), .dclk_out(i_adc_dclock[4]),
                         .fclk_P(ADC4_FCLK_P), .fclk_N(ADC4_FCLK_M), .fclk_out(i_adc_fclock[4]),
                         .adc_clk_P(ADC4_CLOCK_P), .adc_clk_N(ADC4_CLOCK_M),
