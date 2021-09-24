@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1632361649">
+<GenRun Id="impl_1" LaunchPart="xc7s100fgga676-2" LaunchTime="1632506290">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="top.drc"/>
   <File Type="BG-BGN" Name="top.bgn"/>
@@ -71,6 +71,15 @@
   <File Type="PA-TCL" Name="top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci"/>
+        <Attr Name="ImportTime" Val="1593630871"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/hdl/DDR3/DDR3_DPRAM_transfer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -645,7 +654,6 @@
   <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
   <BlockFileSet Type="BlockSrcs" Name="ADC_SERDES"/>
   <BlockFileSet Type="BlockSrcs" Name="idelay_discr_clk_wiz"/>
-  <BlockFileSet Type="BlockSrcs" Name="lclk_adcclk_wiz"/>
   <BlockFileSet Type="BlockSrcs" Name="XDOM_DDR3_PG"/>
   <BlockFileSet Type="BlockSrcs" Name="FIFO_256_72"/>
   <BlockFileSet Type="BlockSrcs" Name="FIFO_2048_32"/>

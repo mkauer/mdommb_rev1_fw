@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
 -- Date        : Wed Sep 22 12:37:39 2021
 -- Host        : matts-laptop running 64-bit Fedora release 32 (Thirty Two)
--- Command     : write_vhdl -force -mode funcsim
---               /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top lclk_adcclk_wiz -prefix
+--               lclk_adcclk_wiz_ lclk_adcclk_wiz_sim_netlist.vhdl
 -- Design      : lclk_adcclk_wiz
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -23,8 +23,6 @@ entity lclk_adcclk_wiz_lclk_adcclk_wiz_clk_wiz is
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of lclk_adcclk_wiz_lclk_adcclk_wiz_clk_wiz : entity is "lclk_adcclk_wiz_clk_wiz";
 end lclk_adcclk_wiz_lclk_adcclk_wiz_clk_wiz;
 
 architecture STRUCTURE of lclk_adcclk_wiz_lclk_adcclk_wiz_clk_wiz is

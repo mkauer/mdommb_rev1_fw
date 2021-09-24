@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
 // Date        : Wed Sep 22 12:37:39 2021
 // Host        : matts-laptop running 64-bit Fedora release 32 (Thirty Two)
-// Command     : write_verilog -force -mode synth_stub
-//               /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top lclk_adcclk_wiz -prefix
+//               lclk_adcclk_wiz_ lclk_adcclk_wiz_stub.v
 // Design      : lclk_adcclk_wiz
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s100fgga676-2

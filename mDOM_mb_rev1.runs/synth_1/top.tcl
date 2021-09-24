@@ -111,6 +111,12 @@ read_verilog -library xil_defaultlib {
   /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/xdom/xdom.v
   /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/hdl/mdommb_fw_rev1_top.v
 }
+read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc]
+set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_ooc.xdc]
+
 read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22.xci
 set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/BUFFER_1024_22/BUFFER_1024_22_ooc.xdc]
 
@@ -130,12 +136,6 @@ set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_25
 
 read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG.xci
 set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/XDOM_DDR3_PG/XDOM_DDR3_PG_ooc.xdc]
-
-read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xci
-set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc]
-set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc]
-set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc]
-set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_ooc.xdc]
 
 read_ip -quiet /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
 set_property used_in_implementation false [get_files -all /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/mDOM_mb_rev1.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_board.xdc]
@@ -202,6 +202,8 @@ set_property used_in_implementation false [get_files /home/mkauer/DM_ICE_250/fir
 read_xdc /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc
 set_property used_in_implementation false [get_files /home/mkauer/DM_ICE_250/firmware/mdommb_rev1_fw/constrs/io.xdc]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
